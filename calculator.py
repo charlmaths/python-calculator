@@ -1,0 +1,49 @@
+print("Please pick the operation -\n")
+print('''
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exit
+''')
+
+operator = int(input("Enter choice(1/2/3/4/5): "))
+
+while operator != 5:
+    if operator == 1:
+        print("You have chosen to add")
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        res = float(num1 + num2)
+        print(f"Result: {res}")
+        operator = int(input("Another calculation? Enter choice(1/2/3/4/5): "))
+    elif operator == 2:
+        print("You have chosen to subtract")
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        res = float(num1 - num2)
+        print(f"Result: {res}")
+        operator = int(input("Another calculation? Enter choice(1/2/3/4/5): "))
+    elif operator == 3:
+        print("You have chosen to multiply")
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        res = float(num1*num2)
+        print(f"Result: {res}")
+        operator = int(input("Another calculation? Enter choice(1/2/3/4/5): "))
+    elif operator == 4:
+        print("You have chosen to divide")
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        res = float(num1/num2)
+        print(f"Result: {res}")
+        operator = int(input("Another calculation? Enter choice(1/2/3/4/5): "))
+    else:
+        print("Invalid input, exiting...")
+        break
+
+print("Exiting the calculator. Goodbye!")
+
+
+
+
