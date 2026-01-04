@@ -8,6 +8,10 @@ Once the project is fully developed, I may use tools such as Copilot or other A.
 
 We will start simple and gradually extend the functionality to see how far it can be taken! It's kinda fun to do it this way!
 
+## Version control (git)
+
+Again, will try to replicate a professional environment here, i.e. will create a short feature branch, requesting PR then merging! :D
+
 ---
 
 ## Version 1
