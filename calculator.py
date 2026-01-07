@@ -1,3 +1,5 @@
+from operators import Operators
+
 print("Please pick the operation -\n")
 print('''
 1. Add
@@ -14,28 +16,32 @@ while operator != 5:
         print("You have chosen to add")
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
-        res = float(num1 + num2)
+        adding = Operators(num1, num2)
+        res = adding.add()
         print(f"Result: {res}")
         operator = int(input("Another calculation? Enter choice(1/2/3/4/5): "))
     elif operator == 2:
         print("You have chosen to subtract")
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
-        res = float(num1 - num2)
+        subtracting = Operators(num1, num2)
+        res = subtracting.subtract()
         print(f"Result: {res}")
         operator = int(input("Another calculation? Enter choice(1/2/3/4/5): "))
     elif operator == 3:
         print("You have chosen to multiply")
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
-        res = float(num1*num2)
+        multiplying = Operators(num1, num2)
+        res = multiplying.multiply()
         print(f"Result: {res}")
         operator = int(input("Another calculation? Enter choice(1/2/3/4/5): "))
     elif operator == 4:
         print("You have chosen to divide")
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
-        res = float(num1/num2)
+        dividing = Operators(num1, num2)
+        res = dividing.divide()
         print(f"Result: {res}")
         operator = int(input("Another calculation? Enter choice(1/2/3/4/5): "))
     else:
