@@ -1,4 +1,4 @@
-from operators import Operators
+from basicmathoperations import Operators
 
 print("Please pick the operation -\n")
 print('''
